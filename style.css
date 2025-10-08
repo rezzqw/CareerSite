@@ -12,7 +12,7 @@ html, body{
     
 }
 header{
-    background-color: #004080;
+    background-color: #ffffff;
     width: 100%;
     height: 200px;
     margin: 0;
@@ -40,20 +40,20 @@ nav a {
     padding: 0 10px;
     text-decoration: none;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 16px;
 }
 nav a:hover {
     color: #1a1e22;
     font-weight: bold;
 }
 aside{
-    background-color: #004080;
+    background-color: #ffffff;
     width: 400px;
     height: 200px;
     float: right;
 }
 .logo{
-    background-color: #004080;
+    background-color: #ffffff;
     width: 400px;
     height: 200px;
     float: left;
@@ -61,10 +61,12 @@ aside{
     padding: 0;
 }
 article{
-    background-color: #ffffff;
+    background: rgb(0,51,102);
+    background: linear-gradient(159deg, rgba(0,51,102,1) 0%, rgba(15,82,186,1) 100%);
     width: 100%;
     height: 100%;
     padding: 20px;
+    overflow-y: auto;
 }
 .article-split {
     display: flex;
@@ -74,12 +76,52 @@ article{
     padding: 20px 0 0 0;
     box-sizing: border-box;
 }
+/*This is the writing side of the article: */
+
 .text-area {
+    color:#ffffff;
     width: 50%;
     height: 300px;
     padding: 15px;
     font-size: 18px;
 }
+.text-area h2{
+    color: #ffffff;
+    display: block;
+    margin-bottom: 10px;
+
+}
+.text-area h3{
+    color: #ffffff;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-size: 80px;
+
+}
+.text-area li{
+    list-style: none;
+}
+.text-area li {
+    color: fff;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 4px solid #44d0ff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.text-area li:hover {
+    transform: translateX(10px);
+    border-left-color: #44d0ff;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+/*This is the picture side of the article: */
 .image-area {
     width: 50%;
     display: flex;
@@ -90,20 +132,53 @@ article{
     width: 500px;
     height: 500px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+.image-area img:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+/*The resmume button for the homepage*/
+.resume-button {
+    background-color: rgba(0, 0, 0, 0.0);
+    border: 3px solid white;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100px;
+    height: 20px;
+    color: white;
+    padding: 15px 15px;
+    margin-top: 50px;
+}
+.resume-button:hover {
+    background-color: #fff;
+    color: #003366;
+    transition: all 0.7s ease;
+    
+
+}
+a{
+    text-decoration: none;
+
+}
+
 footer{
-    background-color: #004080;
+    background-color: #2e2f2f;
     width: 100%;
     height: 200px;
-    color: white;
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 18px;
-    letter-spacing: 1px;
+    font-style: italic;
 }
 span{
-    color: #004080;
+    color: #44d0ff;
+    font-weight: bold;
+    
 }
+
