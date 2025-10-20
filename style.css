@@ -75,6 +75,42 @@ article{
     padding: 20px 0 0 0;
     box-sizing: border-box;
 }
+/* for details and summary articles*/
+summary::-webkit-details-marker {
+    display: none;
+}
+summary::marker {
+    content: none;
+}
+summary {
+  list-style: none;
+}
+
+summary::before {
+  content: "+ "; 
+  margin-right: 5px;
+}
+
+details[open] summary::before {
+  content: "- ";
+}
+.summary-button{
+    background-color: rgba(0, 0, 0, 0.0);
+    border: 3px solid white;
+    border-radius: 5px;
+    text-align: center;
+    width: 320px;
+    height: 35px;
+    color: white;
+    padding: 15px 15px;
+    margin-top: 1px;
+}
+.summary-button:hover {
+    background-color: #fff;
+    color: #003366;
+    transition: all 0.7s ease;
+    
+}
 /*This is the writing side of the article: */
 
 .text-area {
@@ -134,10 +170,7 @@ article{
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-.image-area img:hover{
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-}
+
 /*The resmume button for the homepage*/
 .resume-button {
     background-color: rgba(0, 0, 0, 0.0);
